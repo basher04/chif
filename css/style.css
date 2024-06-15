@@ -1,0 +1,306 @@
+body{
+    font-family: system-ui;
+    
+    background-color: #F5F5F5;
+}
+
+
+/*****************************************************
+                    navbar start
+******************************************************/
+.navbar{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.navbar .navbar-nav .nav-link{
+    color: white !important;
+}
+
+.navbar  ul li a{
+    position: relative;
+}
+
+
+.navbar ul li a::after{
+    content: "";
+    background-color: transparent;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: 17%;
+    left: 12%;
+    transition: all .3s;
+}
+
+.navbar ul li a:hover::after{
+    width: 80%;
+    background-color: white;
+}
+
+
+
+/*****************************************************
+                    home start
+******************************************************/
+
+.bg-image {
+    background-image: url(../images/hero-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    
+    
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay h1{
+    font-size: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+    .overlay h1 {
+      font-size: 35px;
+    }
+  }
+
+.overlay .animation span::after{
+    content: "| ";
+    animation: animat 2s infinite;
+
+}
+
+@keyframes animat{
+     5%{
+        content: "F|";
+     }
+     10%{
+        content: "Fr|";
+     }
+     15%{
+        content: "Fre|";
+     }
+     20%{
+        content: "Free|";
+     }
+     25%{
+        content: "Freel|";
+     }
+     30%{
+        content: "Freela|";
+     }
+     35%{
+        content: "Freelan|";
+     }
+     40%{
+        content: "Freelanc|";
+     }
+     45%{
+        content: "Freelance|";
+     }
+     50%{
+        content: "Freelancer|";
+     }
+     53%{
+        content: "Freelance|";
+     }
+     57%{
+        content: "Freelanc|";
+     }
+     60%{
+        content: "Freelan|";
+     }
+     63%{
+        content: "Freela|";
+     }
+     66%{
+        content: "Freel|";
+     }
+     70%{
+        content: "Free|";
+     }
+     75%{
+        content: "Fre|";
+     }
+     80%{
+        content: "Fr|";
+     }
+     95%{
+        content: "F|";
+     }
+     100%{
+        content: "|";
+     }
+
+
+}
+
+/*****************************************************
+                    about start
+******************************************************/
+.about-me {
+    position: relative;
+}
+
+.about-me h2::after{
+    content: "";
+    background-color: #037AFF;
+    width: 103px;
+    height: 3px;
+    position: absolute;
+    top: 132%;
+    left: 0%;
+}
+
+
+/*****************************************************
+                    SERVICES start
+******************************************************/
+
+.item .circle2 , .contact .circ2{
+    position: relative;
+    background-color: #037AFF;
+    width: 120px;
+    height: 120px;
+    margin:0 auto;
+}
+
+.item .circle1 , .contact .circ1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+}
+
+.item .circle1 i , .contact .circ1 i{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% ,-50%);
+}
+
+ .jop-caption i ,.jop-caption .circle1,.jop-caption .circle2 {
+    transition: all .5s;
+}
+
+.jop-caption:hover .circle1{
+    background-color: #037AFF;
+}
+.jop-caption:hover .circle2{
+    background-color: #CDE1F8;
+}
+.jop-caption:hover i{
+    color: #ffffff;
+}
+
+.image2 {
+    background-image: url(../images/post-3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.image2 .cover{
+    background-color: #0379ff8c ;
+}
+
+.image2 .cover .item .icon1{
+    position: relative;
+}
+
+.image2 .cover .item .icon2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+.shadow-buttom{
+    box-shadow: 0px 5px 8px -2px rgba(0,0,0,0.3);
+-webkit-box-shadow: 0px 5px 8px -2px rgba(0,0,0,0.3);
+-moz-box-shadow: 0px 5px 8px -2px rgba(0,0,0,0.3);
+}
+
+/*****************************************************
+                    portfolio start
+******************************************************/
+
+.portfolio img{
+    transition: all .5s ease-in-out;
+}
+
+.portfolio img:hover{
+    transform: scale(1.3);
+}
+/*****************************************************
+                    contact  start
+******************************************************/
+
+
+
+.image3 {
+    background-image: url(../images/overlay-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+   
+}
+
+.image3 .cover{
+    background-color: #0379ffa9 ;
+}
+
+.image3 img{
+    width: 11%;
+    margin-bottom: 150px;
+    margin-top: 60px;
+}
+
+.contact .send-message h2 {
+    margin-bottom:50px;
+    position: relative;
+}
+
+.contact .send-message h2::after {
+    content: " ";
+    background-color: #037AFF;
+    width: 25%;
+    height: 3px;
+    position: absolute;
+    top: 130%;
+    left: 0%;
+
+}
+/*****************************************************
+                    header
+******************************************************/
+header {
+    margin: 80px 0;
+}
+
+header h2{
+font-size: 48px;
+font-weight: 700;
+position: relative;
+}
+
+header h2:after{
+    content: "";
+    background-color: #037AFF;
+    width: 43px;
+    height: 5px;
+    position: absolute;
+    top: 182%;
+    left: 48%;
+}
+
+
+
